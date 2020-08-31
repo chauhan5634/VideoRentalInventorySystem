@@ -18,23 +18,46 @@ public class Video {
     // we can create special types of methods to access these fields outside the class.
     // 1.Getter Methods:
     // Observer methods / Accessor methods
-    // we can use the getter methods to access the value of a fiels i.e read it.
+    // we can use the getter methods to access the value of a fields i.e read it.
+
+    // 2.Setter Method:
+    // Transformer method / Mutator methods
+    // we can use the setter method to set the value of a field i.e read it.
 
     public String getVideoName() {
         return videoName;
+    }
+
+    public void setVideoName(String videoName) {
+        this.videoName = videoName;
     }
 
     public int getRating() {
         return rating;
     }
 
-    // exception for boolens: the getter method starts with 'is' instead of 'get'
+    /*
+     * public <am:sameAsTheField> void set<NameOfTheField>(<SameAsTheField>) {}
+     *
+     * */
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    // exception for booleans: the getter method starts with 'is' instead of 'get'
     public boolean isCheckOut() {
         return checkOut;
     }
 
+    public void setCheckOut(boolean checkOut) {
+        this.checkOut = checkOut;
+    }
+
+
+
     /*
      * public <am:sameAsTheField> <rt:sameasTheField> get<NameOfTheField> () {}
      *
-     */
+     * */
 }
